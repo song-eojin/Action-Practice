@@ -30,13 +30,14 @@ jobs:
       with:
         java-version: '17'
         distribution: 'adopt'
+
+    - name: Gradle 실행 허가
+      run: chmod +x ./gradlew
+        
     - name: Build with Gradle
       uses: gradle/gradle-build-action@bd5760595778326ba7f1441bcf7e88b49de61a25 # v2.6.0
       with:
         arguments: build
-
-    - name: Gradle 실행 허가
-      run: chmod +x ./gradlew
-
+        
     # - name: Build with Gradle (exclude test code)
     #   run : ./gradlew clean build --exclude-task test
