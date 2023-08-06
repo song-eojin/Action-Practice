@@ -1,5 +1,8 @@
 package com.actionprac.post;
 
+import lombok.Getter;
+
+@Getter // 테스트용
 public class PostResponseDto {
 	private Long id;
 	private String content;
