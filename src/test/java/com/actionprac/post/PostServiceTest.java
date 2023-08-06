@@ -38,6 +38,7 @@ class PostServiceTest {
 
 		// then
 		assertEquals(responseDto.getContent(),content);
+		//assertEquals(responseDto.getContent(),"testContent"); //테스트코드 실패 확인을 위해
 
 	}
 }
